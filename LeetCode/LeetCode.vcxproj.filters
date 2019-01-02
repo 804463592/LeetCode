@@ -18,5 +18,8 @@
     <ClCompile Include="reverse.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Rotate_Image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

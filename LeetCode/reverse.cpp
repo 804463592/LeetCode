@@ -100,17 +100,17 @@ public:
 	}
 };
 
-int main() {
-
-	Solution solution;
-	int input;
-	cout << "请输入需要反转的数字:" << endl;
-	cin >> input;
-	cout <<"结果为"<< solution.reverse(input) << endl;
-	//int a = 99999999999;
-	//cout << a;  //溢出了
-
-	system("pause");
-
-	return 0;
-}
+//int main() {
+//
+//	Solution solution;
+//	int input;
+//	cout << "请输入需要反转的数字:" << endl;
+//	cin >> input;
+//	cout <<"结果为"<< solution.reverse(input) << endl;
+//	//int a = 99999999999;
+//	//cout << a;  //溢出了
+//
+//	system("pause");
+//
+//	return 0;
+//}
