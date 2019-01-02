@@ -11,12 +11,12 @@ class Solution {
 public:
 	int reverse(int x) {
 
-
-		int res = 0;
-		//x为32位有符号整数
-		int p;  //暂存每位上的数字,从个位开始
-		int n = 0; //
+		int res = 0;  //为什么long也会溢出
+        //x为32位有符号整数
+		int n = 0; //位数
 		if (0 == x) { return 0; }
+
+		//全转为正数处理
 		int pos_flag(0);
 		if (x >= 0) pos_flag = true;
 		else {
@@ -26,31 +26,41 @@ public:
 
 		int temp = x;  //保存x
 
-		int div = 1;
-		while (temp > 0) {  //计算x的位数
+		while (temp > 0) {  //计算x的位数n
 			temp = temp / 10;
 			n++;
 		}
 
-		
-		div = 10;
-		int temp1;//用原x的最后一位,判断是否溢出
-		temp1 = x % div;
+		//用数组存储每一位的值,来校验是否溢出
+		int* ori_p = new int[n];
 
-		for (int i = 0; i < n; i++) {
-
-			res += (x%div)*pow(10, n - i - 1);
-
-			x = (x - x % div) / 10;
-
-		}
-
-		if (10 == n && int(res / pow(10, n - 1)) != temp1)  
-		//n=10,十位数才可能溢出,这里虽然通过了leetcode提交,但是还是有可能出现溢出,且转换后首尾相等,不过概率很低,后面有机会再来优化吧
+		for (int i = 0; i < n; i++)
 		{
-			res = 0;
-			cout << "溢出了" << endl;
+			res += (x % 10)*pow(10, n - i - 1);
+			ori_p[i] = x % 10;
+			x = x / 10;
+
 		}
+
+		//判断是否溢出
+		if (10 == n) {  //n=10才可能溢出
+
+			int res_temp = res;
+			for (int i = 0; i < n; i++)
+			{
+				if (int(res_temp % 10) != ori_p[n - i - 1])
+				{
+					cout << "结果溢出,请重新输入!!!" << endl;
+					res = 0;
+					break;
+				}
+				res_temp = res_temp / 10;
+
+			}
+
+		}
+
+		delete ori_p;
 
 		if (!pos_flag) {
 			res = res * (-1);
