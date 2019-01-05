@@ -17,23 +17,25 @@ public:
 	void rotate(vector<vector<int>>& matrix)
 	{
 		//这道题的思路,先上下镜像对称(垂直翻转),再转置
+		//或者 先转置,然后再水平镜像
 
 		//垂直翻转
-		for (size_t i = 0; i < matrix.size()/2; i++)
+		int len = matrix.size(); //默认是长宽一致的
+		for (size_t i = 0; i < len/2; i++)
 		{
-			for (size_t j = 0; j < matrix[i].size(); j++) {
+			for (size_t j = 0; j < len; j++) {
 
 				int temp = 0;
 				temp = matrix[i][j];
-				matrix[i][j] = matrix[matrix.size() - i - 1][j];
-				matrix[matrix.size() - i - 1][j] = temp;
+				matrix[i][j] = matrix[len - i - 1][j];
+				matrix[len - i - 1][j] = temp;
 			}
 
 		}
 		//转置
-		for (size_t i = 0; i < matrix.size(); i++)
+		for (size_t i = 0; i < len; i++)
 		{
-			for (size_t j = i; j < matrix[i].size(); j++) {  //注意j不要从0开始,否则会转置两次,相当于没有转置
+			for (size_t j = i; j < len; j++) {  //注意j不要从0开始,否则会转置两次,相当于没有转置
 
 				int temp = 0;
 				temp = matrix[i][j];
@@ -43,8 +45,6 @@ public:
 			}
 
 		}
-
-
 
 		////水平翻转
 		//for (vector<vector<int>>::iterator iter1 = matrix.begin(); iter1 != matrix.end(); iter1++)
