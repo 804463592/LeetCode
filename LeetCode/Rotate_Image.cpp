@@ -62,35 +62,35 @@ public:
 	}
 };
 
-
-int main() {
-
-	vector<int> ivec1 = { 1,2,3 };
-	vector<int> ivec2 = { 4,5,6 };
-	vector<int> ivec3 = { 7,8,9 };
-
-	vector<vector<int>> ivec;
-	ivec.push_back(ivec1);
-	ivec.push_back(ivec2);
-	ivec.push_back(ivec3);
-
-	Solution solu;
-	solu.rotate(ivec);  //Ðý×ªÍ¼Ïñ
-
-
-	for (vector<vector<int>>::iterator it = ivec.begin(); it != ivec.end(); it++)
-	{
-		for (vector<int>::iterator iter = it->begin(); iter != it->end(); iter++)
-		{
-
-			cout << *iter << "  ";
-		}
-		cout << endl << endl;
-
-	}
-
-
-	system("pause");
-
-	return 0;
-}
+//
+//int main() {
+//
+//	vector<int> ivec1 = { 1,2,3 };
+//	vector<int> ivec2 = { 4,5,6 };
+//	vector<int> ivec3 = { 7,8,9 };
+//
+//	vector<vector<int>> ivec;
+//	ivec.push_back(ivec1);
+//	ivec.push_back(ivec2);
+//	ivec.push_back(ivec3);
+//
+//	Solution solu;
+//	solu.rotate(ivec);  //Ðý×ªÍ¼Ïñ
+//
+//
+//	for (vector<vector<int>>::iterator it = ivec.begin(); it != ivec.end(); it++)
+//	{
+//		for (vector<int>::iterator iter = it->begin(); iter != it->end(); iter++)
+//		{
+//
+//			cout << *iter << "  ";
+//		}
+//		cout << endl << endl;
+//
+//	}
+//
+//
+//	system("pause");
+//
+//	return 0;
+//}
