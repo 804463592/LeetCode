@@ -92,25 +92,25 @@ public:
 	}
 };
 
-int main()
-{
-	ListNode n1(1), n2(5), n3(7);
-	n1.next = &n2;
-	n2.next = &n3;
-
-	Solution solu;
-	ListNode* res = solu.addTwoNumbers(&n1, &n1);
-
-	while (res != NULL) {
-
-		cout << res->val << " ";
-
-		res = res->next;   //全是反着来的 ,先显示低位,然后高位
-
-	}
-
-
-	getchar();
-	return 0;
-}
+//int main()
+//{
+//	ListNode n1(1), n2(5), n3(7);
+//	n1.next = &n2;
+//	n2.next = &n3;
+//
+//	Solution solu;
+//	ListNode* res = solu.addTwoNumbers(&n1, &n1);
+//
+//	while (res != NULL) {
+//
+//		cout << res->val << " ";
+//
+//		res = res->next;   //全是反着来的 ,先显示低位,然后高位
+//
+//	}
+//
+//
+//	getchar();
+//	return 0;
+//}
 
