@@ -17,6 +17,7 @@ string convert(string s, int numRows);
 
 #include <string>
 #include<iostream>
+#include<vector>
 using namespace std;
 
 class Solution {
@@ -24,35 +25,66 @@ public:
 	string convert(string s, int numRows)
 	{
 		string addstr;
-		int i = 0;
-		while (i < s.size()) {
-
-		
-			addstr.push_back(s[i]);
-			//addstr.push_back(s[i + 2 * (numRows - 2) + 2]);
-			i = i + 2 * (numRows - 2) + 2;
-
+		if (1 == numRows || numRows <= 0)
+		{
+			addstr = s;//保持不变
 		}
+		else {
 
+			int i = 0;
+			vector<int> index;
 
+			//第一行要单独处理
+			while (i < s.size())
+			{
+				index.push_back(i);   //保存下第一行每个元素的位置
+				addstr.push_back(s[i]);
+				i = i + 2 * (numRows - 2) + 2;
 
+			}
 
+			//中间的循环处理
+			for (int k = 1; k < numRows - 1; k++)
+			{
+				for (int q = 0; q < index.size(); q++)
+				{
+					if ((index[q] + k) < s.size())
+					{
+						addstr.push_back(s[index[q] + k]);
 
+					}
 
+					if ((index[q] + k + 2 * (numRows - k - 2) + 2) < s.size())
+					{
+						addstr.push_back(s[index[q] + k + 2 * (numRows - k - 2) + 2]);
+
+					}
+				}
+			}
+
+			//最后一行又单独处理
+			int p = 0;
+			while ((p + numRows - 1) < s.size())
+			{
+
+				addstr.push_back(s[p + numRows - 1]);
+				p = p + 2 * (numRows - 2) + 2;
+
+			}
+		}
 
 		return addstr;
 	}
 
 };
 
-int main()
-{
-	string sss = "LEETCODEISHIRING";
-	int num = 3;
-	Solution solu;
-	cout << solu.convert(sss, num) << endl;
-
-
-	getchar();
-	return 0;
-}
+//int main()
+//{
+//	string sss = "LEETCODEISHIRING";
+//	int num = 1;
+//	Solution solu;
+//	cout << solu.convert(sss, num) << endl;
+//
+//	getchar();
+//	return 0;
+//}
