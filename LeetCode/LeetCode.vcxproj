@@ -120,6 +120,7 @@
     <ClCompile Include="reverse.cpp" />
     <ClCompile Include="Rotate_Image.cpp" />
     <ClCompile Include="TrappingRainWater.cpp" />
+    <ClCompile Include="TrappingRainWater2.cpp" />
     <ClCompile Include="ZigZag_Conversion.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

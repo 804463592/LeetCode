@@ -7,6 +7,9 @@ In this case, 6 units of rain water (blue section) are being trapped.
 Thanks Marcos for contributing this image!
 
 */
+
+//下面的实现复杂了,换了个思路
+
 #include<vector>
 #include <iostream>
 using namespace std;
@@ -67,37 +70,99 @@ public:
 		cout << "找到的所有转折点的索引\n(通俗理解为:导函数为0的点以及边界点)为:" << endl;
 		for (int i = 0; i < idx.size(); i++)
 		{
-			cout <<idx[i] << " ";
+			cout << idx[i] << " ";
 		}
 		cout << endl;
 
 
-		//根据idx中,找到的所有转折点,计算能接的雨水量
-		if (idx.size() <= 1)
-		{  //则说明原来的数组,是一个空的,或者全是相同元素的;
+		////根据idx中,找到的所有转折点,计算能接的雨水量
+		//if (idx.size() <= 1)
+		//{  //则说明原来的数组,是一个空的,或者全是相同元素的;
 
-			sum_rain = 0;//显然雨水量应该为0;
-		}
-		else {
+		//	sum_rain = 0;//显然雨水量应该为0;
+		//}
+		//else {
 
-			//TODO:计算雨水量
+		//	//TODO:计算雨水量
+		//	int i = 0;
+		//	while (i < idx.size())
+		//	{
+
+		//		int n_start = 0;  //每次计算sum_rain的起始点和终止点
+		//		int n_end = 0;
+
+
+		//		if ((i + 1) < idx.size() && height[idx[i]] <= height[idx[i + 1]])  //满足该条件,则可以直接计算雨水量
+		//		{
+
+		//			n_start = idx[i];
+		//			n_end = idx[i + 1];
+		//			/////////////计算sum_rain//////////////////
+
+
+		//			/////////////////////////////////////////
+		//			i++;
+		//		}
+		//		else if ((i + 1) < idx.size() && height[idx[i]] > height[idx[i + 1]])
+		//		{
+
+		//			n_start = idx[i];
+
+		//			//需要去找最接近n_start对应的height的索引
+		//			int max = height[idx[i] + 1];  //不会溢出
+		//			while (i < idx.size())
+		//			{
+
+		//				if (height[idx[i]] > height[n_start])
+		//				{
+		//					n_end = idx[i];
+		//					break;
+
+		//				}
+
+		//				if (height[idx[i]] > max)
+		//				{
+		//					max = height[idx[i]];
+		//					n_end = idx[i];
+		//				}
+
+		//				i++;
+		//			}
+		//			 
+
+		//			//继续往后移动
+		//			i++;
+		//		}
+
+		//		//通过n_start和n_end,计算sum_rain
+
+
+		//		cout << "n_start= " << n_start << endl;
+		//		cout << "n_end= " << n_end << endl;
+
+
+		//		//更新i,n_start,n_end;
+
+		//		//i++;
+		//	}
+		//}
 
 
 
-		}
+
 		return sum_rain;
 	}
 };
 
 
-int main()
-{
-	vector<int> height = {0,0,5,7,9,5,6,9,7,3,1,5,5,5,4,6,9,5,1,1,6};
-	Solution solu;
-	int sum_rain = solu.trap(height);
-	cout << "计算得到雨水量为" << sum_rain << endl;
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	vector<int> height = { 0,1,0,2,1,0,1,3,2,1,2,1,0,1 };
+//	Solution solu;
+//	int sum_rain = solu.trap(height);
+//	cout << "计算得到雨水量为" << sum_rain << endl;
+//
+//	system("pause");
+//	return 0;
+//}
 
