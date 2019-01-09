@@ -24,13 +24,13 @@
     <ClCompile Include="ZigZag_Conversion.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="addTwoNumbers.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="countAndSay.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="TrappingRainWater.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="addTwoNumbers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
