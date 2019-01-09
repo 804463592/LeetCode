@@ -21,14 +21,6 @@ public:
 		int max_height = 0;
 		int n_height = height.size();
 
-		//if (height.begin() != height.end()) 
-		//{
-		//	max_height = *max_element(height.begin(), height.end());
-		//}
-		//else 
-		//{
-		//	max_height = 0;
-		//}
 		for (int i = 0; i < n_height; i++)
 		{
 			if (height[i] > max_height) {
@@ -50,7 +42,6 @@ public:
 				light_area++;
 				n++;
 			}
-
 		}
 
 		//右边阳光照射
@@ -64,13 +55,11 @@ public:
 			}
 
 		}
-
 		//计算原始的数组面积,相当于求围"水坝的石头面积"
 		for (int i = 0; i < n_height; i++)
 		{
 			stone_area += height[i];
 		}
-
 
 		sum_rain = sum_area - light_area - stone_area;
 
@@ -79,14 +68,14 @@ public:
 };
 
 
-int main()
-{
-	vector<int> height = { 0,1,0,2,1,0,1,3,2,1,2,1 };
-	Solution solu;
-	int sum_rain = solu.trap(height);
-	cout << "计算得到雨水量为" << sum_rain << endl;
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	vector<int> height = { 0,1,0,2,1,0,1,3,2,1,2,1 };
+//	Solution solu;
+//	int sum_rain = solu.trap(height);
+//	cout << "计算得到雨水量为" << sum_rain << endl;
+//
+//	system("pause");
+//	return 0;
+//}
 
