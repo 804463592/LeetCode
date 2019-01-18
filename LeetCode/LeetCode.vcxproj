@@ -118,6 +118,7 @@
     <ClCompile Include="addTwoNumbers.cpp" />
     <ClCompile Include="ContainerWithMostWater.cpp" />
     <ClCompile Include="countAndSay.cpp" />
+    <ClCompile Include="Longest_Palindromic_Substring.cpp" />
     <ClCompile Include="Longest_Substring_Without_Repeating_Characters.cpp" />
     <ClCompile Include="Palindrome_Number.cpp" />
     <ClCompile Include="reverse.cpp" />

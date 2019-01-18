@@ -76,15 +76,15 @@ public:
 #include <string>
 #include <sstream>
 
-int main() {
-
-	Solution solu;
-	int input = 0;
-	cin >> input;
-
-	bool res = solu.isPalindrome(input);
-
-	cout << res << endl;
-	system("pause");
-	return 0;
-}
+//int main() {
+//
+//	Solution solu;
+//	int input = 0;
+//	cin >> input;
+//
+//	bool res = solu.isPalindrome(input);
+//
+//	cout << res << endl;
+//	system("pause");
+//	return 0;
+//}

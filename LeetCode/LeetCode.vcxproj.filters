@@ -45,5 +45,8 @@
     <ClCompile Include="Palindrome_Number.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Longest_Palindromic_Substring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
