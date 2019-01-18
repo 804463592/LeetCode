@@ -77,8 +77,9 @@ public:
 
 		int ans = 0, i = 0, j = 0;
 		while (i < n && j < n) {
-			// try to extend the range [i, j]
-			if (!move_set.count(s[j])) {
+
+			if (!move_set.count(s[j])) {  //s[j]不在滑动窗口move_set中
+
 				move_set.insert(s[j++]);
 				ans = max(ans, j - i);
 			}
@@ -94,17 +95,14 @@ public:
 };
 
 
-int main() {
-
-	string ss = "abcdfffff";
-	cout << "请输入字符串:" << endl;
-	cin >> ss;
-	Solution solu;
-	cout << "该字符串最长的不重复子串为" << solu.lengthOfLongestSubstring(ss)<<endl;
-
-
-
-
-	system("pause");
-	return 0;
-}
+//int main() {
+//
+//	string ss = "abcdfffff";
+//	cout << "请输入字符串:" << endl;
+//	cin >> ss;
+//	Solution solu;
+//	cout << "该字符串最长的不重复子串为" << solu.lengthOfLongestSubstring(ss)<<endl;
+//
+//	system("pause");
+//	return 0;
+//}

@@ -42,5 +42,8 @@
     <ClCompile Include="Longest_Substring_Without_Repeating_Characters.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Palindrome_Number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
