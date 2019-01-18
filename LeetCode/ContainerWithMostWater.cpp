@@ -46,13 +46,13 @@ public:
 	}
 };
 
-int main()
-{
-	vector<int> height = { 0,1,0,2,1,0,1,3,2,1,2,1 };
-	Solution solu;
-	int max_water = solu.maxArea(height);
-	cout << "计算得到的最大容器水量为" << max_water << endl;
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	vector<int> height = { 0,1,0,2,1,0,1,3,2,1,2,1 };
+//	Solution solu;
+//	int max_water = solu.maxArea(height);
+//	cout << "计算得到的最大容器水量为" << max_water << endl;
+//
+//	system("pause");
+//	return 0;
+//}
