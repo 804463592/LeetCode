@@ -64,14 +64,13 @@ public:
 };
 
 
-int main() {
-
-	//前提是用户需要正确输入罗马数字
-
-	string Roman_str = "LVIII";
-	Solution solu;
-	cout << solu.romanToInt(Roman_str);
-
-	system("pause");
-	return 0;
-}
+//int main() {
+//
+//	//前提是用户需要正确输入罗马数字
+//	string Roman_str = "LVIII";
+//	Solution solu;
+//	cout << solu.romanToInt(Roman_str);
+//
+//	system("pause");
+//	return 0;
+//}
