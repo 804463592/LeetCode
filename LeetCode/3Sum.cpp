@@ -33,68 +33,7 @@ public:
 		
 		vector<vector<int> > res_nums;
 
-		if (nums.size() == 0) {
-
-			//nums.push_back(0);
-			//res_nums.push_back(nums); //返回原vector
-		}
-		else if (nums.size() == 1 || nums.size() == 2) {
-
-			res_nums.push_back(nums); //返回原vector
-
-		}
-		else if (nums.size() == 3) {
-
-			if (nums[0]+nums[1]+nums[2]==0) {
-
-				res_nums.push_back(nums); //返回原vector
-			}
-		}
-		else {
-
-			sort(nums.begin(), nums.end());
-			for (vector<int>::iterator iter1 = nums.begin(); iter1 != nums.end() - 1; iter1++)
-			{
-				for (vector<int>::iterator iter2 = nums.begin(); iter2!=iter1&&iter2 != nums.end(); iter2++)
-				{
-					int pre_sum = *iter1 + *iter2;
-					//如果*iter1+*iter2>=0,则往左边遍历
-					if (pre_sum >= 0) {
-						for (vector<int>::iterator iter3 = nums.begin(); iter3 != iter1 && iter3 != iter2 && iter3 != nums.end(); iter3++)
-						{
-							if (pre_sum + *iter3 == 0) {
-								vector<int> ivec;
-								ivec.push_back(*iter1);
-								ivec.push_back(*iter2);
-								ivec.push_back(*iter3);
-								res_nums.push_back(ivec);
-								break;
-							}
-						}
-					}
-					else//反之,向右边遍历
-					{
-						for (vector<int>::reverse_iterator r_iter3 = nums.rbegin(); *r_iter3 != *iter1 && *r_iter3 != *iter2 && r_iter3 != nums.rend(); r_iter3++)
-						{
-							if (pre_sum + *r_iter3 == 0) {
-								vector<int> ivec;
-								ivec.push_back(*iter1);
-								ivec.push_back(*iter2);
-								ivec.push_back(*r_iter3);
-								res_nums.push_back(ivec);
-								break;
-							}
-						}
-
-
-					}
-
-				}
-
-			}
-
-		}
-
+	
 
 
 		return res_nums;
