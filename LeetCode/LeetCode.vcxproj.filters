@@ -48,5 +48,8 @@
     <ClCompile Include="Longest_Palindromic_Substring.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Roman_To_Integer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

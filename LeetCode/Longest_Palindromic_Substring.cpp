@@ -65,15 +65,15 @@ public:
 	}
 };
 
-int main() {
-	string str = "cbb";
-	Solution solu;
-	string hhh = solu.longestPalindrome(str);
-
-	for (int i = 0; i < hhh.size(); i++)
-	{
-		cout << hhh[i] << " ";
-	}
-	system("pause");
-	return 0;
-}
+//int main() {
+//	string str = "accbbc";
+//	Solution solu;
+//	string hhh = solu.longestPalindrome(str);
+//
+//	for (int i = 0; i < hhh.size(); i++)
+//	{
+//		cout << hhh[i] << " ";
+//	}
+//	system("pause");
+//	return 0;
+//}
