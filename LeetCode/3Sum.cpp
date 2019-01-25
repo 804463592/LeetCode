@@ -86,27 +86,27 @@ public:
 
 
 
-int main() {
-
-	vector<int> ivec = { -1,0,1,2,-1,-4,-1,1 };
-
-	Solution solu;
-
-	vector<vector<int>> res = solu.threeSum(ivec);
-
-
-	for (vector<vector<int>>::iterator iter = res.begin(); iter != res.end(); iter++)
-	{
-		cout << "[";
-		for (vector<int>::iterator it = iter->begin(); it != iter->end(); it++) {
-			cout << *it << " ";
-
-		}
-		cout << "]";
-
-
-	}
-
-	system("pause");
-	return 0;
-}
+//int main() {
+//
+//	vector<int> ivec = { -1,0,1,2,-1,-4,-1,1 };
+//
+//	Solution solu;
+//
+//	vector<vector<int>> res = solu.threeSum(ivec);
+//
+//
+//	for (vector<vector<int>>::iterator iter = res.begin(); iter != res.end(); iter++)
+//	{
+//		cout << "[";
+//		for (vector<int>::iterator it = iter->begin(); it != iter->end(); it++) {
+//			cout << *it << " ";
+//
+//		}
+//		cout << "]";
+//
+//
+//	}
+//
+//	system("pause");
+//	return 0;
+//}
