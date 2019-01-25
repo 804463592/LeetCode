@@ -13,25 +13,52 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\201809_201902">
+      <UniqueIdentifier>{2efd256e-6b2a-4a8a-b0e7-f89d98ecbeb8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="reverse.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Rotate_Image.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ZigZag_Conversion.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="addTwoNumbers.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainerWithMostWater.cpp">
+      <Filter>源文件\201809_201902</Filter>
     </ClCompile>
     <ClCompile Include="countAndSay.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="Longest_Palindromic_Substring.cpp">
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="Longest_Substring_Without_Repeating_Characters.cpp">
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="Palindrome_Number.cpp">
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="reverse.cpp">
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="Roman_To_Integer.cpp">
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="Rotate_Image.cpp">
+      <Filter>源文件\201809_201902</Filter>
     </ClCompile>
     <ClCompile Include="TrappingRainWater.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="TrappingRainWater2.cpp">
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="ZigZag_Conversion.cpp">
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="3Sum.cpp">
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
+    <ClCompile Include="4Sum.cpp">
+      <Filter>源文件\201809_201902</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
