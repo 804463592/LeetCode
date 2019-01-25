@@ -30,41 +30,55 @@ class Solution {
 public:
 	vector<vector<int>> threeSum(vector<int>& nums) {
 
-		
-		vector<vector<int> > res_nums;
 
-	
+		vector<vector<int> > res_nums;
+		sort(nums.begin(), nums.end());
+
+		for (int k = nums.size() - 1; k >= 2;) {
+
+			for (int i = 0, j = k - 1; i < j;) {
+
+				int tmp_sum = nums[i] + nums[j];
+				if (tmp_sum + nums[k] < 0)
+				{//小于0则让i增加,从而让nums[i]增加
+					i++;
+				}
+				else if (tmp_sum + nums[k] > 0) {
+					//大于0则让j减少
+					j--;
+				}
+				else { //等于0,则先保存i,j,k对应的值,同时移动ij,去除掉重复的值
+					vector<int> tmp_vec;
+					tmp_vec.push_back(nums[i]);
+					tmp_vec.push_back(nums[j]);
+					tmp_vec.push_back(nums[k]);
+					res_nums.push_back(tmp_vec);
+					//去重复
+					i++;
+					while (i < j &&nums[i - 1] == nums[i]) {
+						i++;
+					}
+					j--;
+					while (i < j &&nums[j + 1] == nums[j]) {
+
+						j--;
+					}
+				}
+
+			}
+			//去掉重复的k
+			k--;
+			while (k >= 2 && nums[k + 1] == nums[k])
+			{
+				k--;
+			}
+		}
+
+
 
 
 		return res_nums;
 
-		//std::sort(nums.begin(), nums.end());
-		//vector<vector<int>> v2;
-		//for (int c = nums.size() - 1; c >= 2; ) {
-		//	for (int a = 0, b = c - 1; a < b; ) {
-		//		int tmp_sum = nums[a] + nums[b];
-		//		if (tmp_sum < -nums[c]) {
-		//			++a;
-		//		}
-		//		else if (tmp_sum > -nums[c]) {
-		//			--b;
-		//		}
-		//		else {
-		//			vector<int> v = { nums[a], nums[b], nums[c] };
-		//			v2.push_back(v);
-		//			do {//去重复 a b
-		//				++a;
-		//			} while (a < b && nums[a - 1] == nums[a]);
-		//			do {
-		//				--b;
-		//			} while (a < b && nums[b + 1] == nums[b]);
-		//		}
-		//	}
-		//	do {//去重复 c
-		//		--c;
-		//	} while (c >= 2 && nums[c + 1] == nums[c]);
-		//}
-		//return v2;
 
 
 	}
@@ -74,7 +88,7 @@ public:
 
 int main() {
 
-	vector<int> ivec = { -1,0,1,2,-1,-4};
+	vector<int> ivec = { -1,0,1,2,-1,-4,-1,1 };
 
 	Solution solu;
 
@@ -89,7 +103,7 @@ int main() {
 
 		}
 		cout << "]";
-		
+
 
 	}
 
