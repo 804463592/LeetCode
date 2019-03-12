@@ -122,6 +122,7 @@
     <ClCompile Include="countAndSay.cpp" />
     <ClCompile Include="Longest_Palindromic_Substring.cpp" />
     <ClCompile Include="Longest_Substring_Without_Repeating_Characters.cpp" />
+    <ClCompile Include="Minimum_Path_Sum.cpp" />
     <ClCompile Include="Palindrome_Number.cpp" />
     <ClCompile Include="reverse.cpp" />
     <ClCompile Include="Roman_To_Integer.cpp" />
