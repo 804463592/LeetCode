@@ -105,31 +105,31 @@ public:
 };
 
 
-int main()
-{
-	vector<vector<int>> vec =
-	{
-		{2, 3, 1},
-		{1, 5, 1},
-		{4, 2, 1}
-	};
-
-
-
-
-	vector<vector<int>> tvec =
-	{
-		{1, 2, 5},
-		{3, 2, 1},
-		//{4, 2, 1},
-		//{4, 2, 1}
-		
-	};
-
-	Solution solu;
-	//cout << solu.minimumTotal(tvec);
-
-	cout << solu.minPathSum(tvec);
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	vector<vector<int>> vec =
+//	{
+//		{2, 3, 1},
+//		{1, 5, 1},
+//		{4, 2, 1}
+//	};
+//
+//
+//
+//
+//	vector<vector<int>> tvec =
+//	{
+//		{1, 2, 5},
+//		{3, 2, 1},
+//		//{4, 2, 1},
+//		//{4, 2, 1}
+//		
+//	};
+//
+//	Solution solu;
+//	//cout << solu.minimumTotal(tvec);
+//
+//	cout << solu.minPathSum(tvec);
+//	system("pause");
+//	return 0;
+//}
