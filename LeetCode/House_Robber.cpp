@@ -91,6 +91,8 @@ public:
 		int* p = new int[n_house];
 		p[0] = nums[0];
 		p[1] = max(nums[0], nums[1]);
+		//p[2] = max(nums[0] + nums[2], nums[1]);
+
 		for (int i = 2; i < nums.size(); i++)
 		{
 			p[i] = max(p[i - 1], p[i - 2]+nums[i]);
@@ -131,12 +133,12 @@ public:
 
 };
 
-int main()
-{
-	Solution solu;
-	vector<int> house_money = {1,2,3,19,3,1 };
-	cout << solu.rob2(house_money)<< endl;
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	vector<int> house_money = {1,2,3,19,3,1 };
+//	cout << solu.rob1(house_money)<< endl;
+//
+//	system("pause");
+//	return 0;
+//}
