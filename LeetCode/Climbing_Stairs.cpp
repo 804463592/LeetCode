@@ -62,11 +62,11 @@ public:
 
 };
 
-int main()
-{
-	Solution solu;
-	cout << solu.climbStairs(40) << endl;
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	cout << solu.climbStairs(40) << endl;
+//
+//	system("pause");
+//	return 0;
+//}
