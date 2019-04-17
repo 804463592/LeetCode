@@ -123,6 +123,7 @@
     <ClCompile Include="countAndSay.cpp" />
     <ClCompile Include="House_Robber.cpp" />
     <ClCompile Include="House_Robber2.cpp" />
+    <ClCompile Include="House_Robber3.cpp" />
     <ClCompile Include="Longest_Palindromic_Substring.cpp" />
     <ClCompile Include="Longest_Substring_Without_Repeating_Characters.cpp" />
     <ClCompile Include="Minimum_Path_Sum.cpp" />

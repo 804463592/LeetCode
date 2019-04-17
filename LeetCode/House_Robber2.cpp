@@ -129,13 +129,13 @@ public:
 
 };
 
-int main()
-{
-	Solution solu;
-	vector<int> house_money = { 4,1,2,7,5,3,1 };  //14
-	vector<int> house_money1 = { 2, 7, 9, 3, 1 };  //11
-	cout << solu.rob2(house_money1) << endl;
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	vector<int> house_money = { 4,1,2,7,5,3,1 };  //14
+//	vector<int> house_money1 = { 2, 7, 9, 3, 1 };  //11
+//	cout << solu.rob2(house_money1) << endl;
+//
+//	system("pause");
+//	return 0;
+//}
