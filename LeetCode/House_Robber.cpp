@@ -65,7 +65,6 @@ public:
 			if (val_b > val_a) {
 				num.push_back(tmp2);
 			}
-			
 			return max(val_a, val_b);
 		}
 

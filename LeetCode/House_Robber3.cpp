@@ -130,43 +130,43 @@ public:
 	}
 };
 
-int main()
-{
-	Solution solu;
-	/*构造如下的二叉树，结果是7：
- 3
-/ \
-2   3
- \   \
-  3   1
- */
-	TreeNode node1(3), node2(2), node3(3), node4(3), node5(1);
-	node1.left = &node2;
-	node1.right = &node3;
-	node2.right = &node4;
-	node3.right = &node5;
-
-	/* 构造如下二叉树，结果应该是9
-	 3
-	/ \
-   4   5
-  / \   \
- 1   3   1
-	*/
-	TreeNode* root = new TreeNode(3);
-	root->left = new TreeNode(4);
-	root->right = new TreeNode(5);
-	root->left->left = new TreeNode(1);
-	root->left->right = new TreeNode(3);
-	root->right->right = new TreeNode(1);
-
-	//3
-	TreeNode *root2 = new TreeNode(2);
-	root2->left = new TreeNode(3);
-	root2->left->left = new TreeNode(1);
-
-	//cout << "&node1结果是：" <<solu.rob(&node1) << endl;
-	cout << "root2结果是：" << solu.rob2(nullptr) << endl;
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	/*构造如下的二叉树，结果是7：
+// 3
+/// \
+//2   3
+// \   \
+//  3   1
+// */
+//	TreeNode node1(3), node2(2), node3(3), node4(3), node5(1);
+//	node1.left = &node2;
+//	node1.right = &node3;
+//	node2.right = &node4;
+//	node3.right = &node5;
+//
+//	/* 构造如下二叉树，结果应该是9
+//	 3
+//	/ \
+//   4   5
+//  / \   \
+// 1   3   1
+//	*/
+//	TreeNode* root = new TreeNode(3);
+//	root->left = new TreeNode(4);
+//	root->right = new TreeNode(5);
+//	root->left->left = new TreeNode(1);
+//	root->left->right = new TreeNode(3);
+//	root->right->right = new TreeNode(1);
+//
+//	//3
+//	TreeNode *root2 = new TreeNode(2);
+//	root2->left = new TreeNode(3);
+//	root2->left->left = new TreeNode(1);
+//
+//	//cout << "&node1结果是：" <<solu.rob(&node1) << endl;
+//	cout << "root2结果是：" << solu.rob2(nullptr) << endl;
+//	system("pause");
+//	return 0;
+//}
