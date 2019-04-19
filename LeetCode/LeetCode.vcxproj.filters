@@ -81,5 +81,8 @@
     <ClCompile Include="Boats_to_Save_People.cpp">
       <Filter>源文件\201903_</Filter>
     </ClCompile>
+    <ClCompile Include="Fruit_into_Baskets.cpp">
+      <Filter>源文件\201903_</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -122,6 +122,7 @@
     <ClCompile Include="Climbing_Stairs.cpp" />
     <ClCompile Include="ContainerWithMostWater.cpp" />
     <ClCompile Include="countAndSay.cpp" />
+    <ClCompile Include="Fruit_into_Baskets.cpp" />
     <ClCompile Include="House_Robber.cpp" />
     <ClCompile Include="House_Robber2.cpp" />
     <ClCompile Include="House_Robber3.cpp" />

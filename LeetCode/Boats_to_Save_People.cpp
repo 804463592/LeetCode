@@ -106,20 +106,34 @@ public:
 			boats_num++;
 		}
 		return boats_num;
+
+		//官方答案
+		/*sort(people.begin(), people.end());
+		int i = 0, j = people.size() - 1;
+		int ans = 0;
+
+		while (i <= j) {
+			ans++;
+			if (people[i] + people[j] <= limit)
+				i++;
+			j--;
+		}
+
+		return ans;*/
 	}
 
 
 };
 
-int main()
-{
-	Solution solu;
-	vector<int> input_people = {1,1,3,2,5,3 };
-	int limit = 5;
-
-	cout << "每辆船不限人数，需要的船的数量为：" << solu.numRescueBoatsNotLimit(input_people, limit) << endl;
-
-	cout << "每辆船限人数两人，需要的船的数量为：" << solu.numRescueBoats(input_people, limit);
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	vector<int> input_people = {1,1,3,2,5,3 };
+//	int limit = 5;
+//
+//	cout << "每辆船不限人数，需要的船的数量为：" << solu.numRescueBoatsNotLimit(input_people, limit) << endl;
+//
+//	cout << "每辆船限人数两人，需要的船的数量为：" << solu.numRescueBoats(input_people, limit);
+//	system("pause");
+//	return 0;
+//}
