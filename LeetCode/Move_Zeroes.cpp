@@ -48,18 +48,18 @@ public:
 	}
 };
 
-int main()
-{
-	Solution solu;
-	vector<int> ivec = { 0,1,2,2,3,0,4,2 };
-
-	
-	solu.moveZeroes(ivec);
-
-	for (int i = 0; i < ivec.size(); i++)
-	{
-		cout << ivec[i] << endl;
-	}
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	vector<int> ivec = { 0,1,2,2,3,0,4,2 };
+//
+//	
+//	solu.moveZeroes(ivec);
+//
+//	for (int i = 0; i < ivec.size(); i++)
+//	{
+//		cout << ivec[i] << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}

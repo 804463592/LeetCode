@@ -90,5 +90,8 @@
     <ClCompile Include="Move_Zeroes.cpp">
       <Filter>源文件\201903_</Filter>
     </ClCompile>
+    <ClCompile Include="Minimum_Size_Subarray_Sum.cpp">
+      <Filter>源文件\201903_</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
