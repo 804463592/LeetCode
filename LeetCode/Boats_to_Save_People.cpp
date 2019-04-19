@@ -36,51 +36,90 @@
 using namespace std;
 class Solution {
 public:
-	int numRescueBoats(vector<int>& people, int limit) {
-		//先对vector排序
-		sort(people.begin(), people.end());
 
+	//这是每条船不限人数的做法，之前没看到题目说的每条船最多坐两人
+	int numRescueBoatsNotLimit(vector<int>& people, int limit)
+	{
+		
 		//for (int i = 0; i < people.size(); i++)
 		//{
 		//	cout << people[i] << endl;
 		//}
-
 		//在满足limit的情况下，尽可能的让每艘船多坐人
 		int n_boats=0;
 		int n_people = people.size();
-		int weight_boats = 0; //船上人的重量
-		int p = 0;
-		while (p<n_people)
+
+		if (n_people == 1)
 		{
-			if (people[p] + weight_boats < limit)
+			return people[0] > limit ? 0: 1;
+		}
+		if (n_people == 2)
+		{
+			return people[0] + people[1] > limit ? 2 : 1;
+		}
+		//对vector从小到大排序
+		sort(people.begin(), people.end());
+		int weight_boats = 0; //船上人的重量
+		int pa = 0,pb =n_people-1;//双指针
+		while (pa<pb)
+		{
+			//像这种双指针的题目，一定尽可能考虑while循环，用if else会很麻烦
+			while (people[pb] + weight_boats <= limit) 
 			{
-				weight_boats += people[p];
-				p++;
+				weight_boats += people[pb];
+				pb--;
 			}
-			else
+			while (people[pa] + weight_boats <= limit)
+			{
+				weight_boats += people[pa];
+				pa++;
+			}
+			weight_boats = 0;
+
+			++n_boats;
+
+			if (pa == pb) 
 			{
 				++n_boats;
-				weight_boats = 0;
-				p++;
 			}
-			
-
 		}
-
-
-
-
 		return n_boats;
 	}
+
+	//每辆船限人数两人，需要的船的数量,这是题目需要的结果
+	int numRescueBoats(vector<int>& people, int limit) 
+	{
+		sort(people.begin(), people.end());
+		int left = 0, right = people.size() - 1;
+		int boats_num = 0;
+		while (left <= right)
+		{
+			if (people[left] + people[right]<=limit) //坐两个人
+			{
+				left++;
+				right--;
+			}
+			else  //只坐重的人
+			{
+				right--;
+			}
+			boats_num++;
+		}
+		return boats_num;
+	}
+
+
 };
 
 int main()
 {
 	Solution solu;
-	vector<int> input_people = { 3,2,2,1 };
-	int limit = 3;
+	vector<int> input_people = {1,1,3,2,5,3 };
+	int limit = 5;
 
-	cout << solu.numRescueBoats(input_people, limit);
+	cout << "每辆船不限人数，需要的船的数量为：" << solu.numRescueBoatsNotLimit(input_people, limit) << endl;
+
+	cout << "每辆船限人数两人，需要的船的数量为：" << solu.numRescueBoats(input_people, limit);
 	system("pause");
 	return 0;
 }
