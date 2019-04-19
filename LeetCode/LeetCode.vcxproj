@@ -130,6 +130,7 @@
     <ClCompile Include="Longest_Substring_Without_Repeating_Characters.cpp" />
     <ClCompile Include="Minimum_Path_Sum.cpp" />
     <ClCompile Include="Palindrome_Number.cpp" />
+    <ClCompile Include="Remove_Element.cpp" />
     <ClCompile Include="reverse.cpp" />
     <ClCompile Include="Roman_To_Integer.cpp" />
     <ClCompile Include="Rotate_Image.cpp" />

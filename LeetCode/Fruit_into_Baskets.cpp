@@ -103,6 +103,8 @@ public:
 	int count = -1, i, j;
 	bool flag = true;  //用以表示第二个篮子装了水果没有，true表示没装
 	int a = tree[0], b = -1;
+
+	//这第一个for循环，找出第一个满足条件的子序列
 	for (i = 0; i <= len; i++) 
 	{
 		if (i == len) return len;
@@ -117,10 +119,12 @@ public:
 			break;
 		}
 	}
+	//a，b表示两种水果，j表示新的起点
 	a = tree[i - 1]; b = tree[i]; j = i - 1;
-	for (; i <= len; i++) {
-		while (tree[j] == tree[j - 1]) j--;
-		if (i == len || !(tree[i] == a || tree[i] == b))
+	for (; i <= len; i++)
+	{
+		while (tree[j] == tree[j - 1]) j--; //将如果相邻的果树，水果相同，则起点必须要前移
+		if (i == len || (tree[i] != a  && tree[i] != b))
 		{
 			count = max(count, i - j);
 			if (i == len) return count;
@@ -132,6 +136,63 @@ public:
 	return count;
 
 	}
+	int myTotalFruit(vector<int>& tree) 
+	{
+		int n_trees = tree.size();
+		if (n_trees <= 2) {
+			return n_trees;
+		}
+		int i, j;
+		int basket1 = tree[0], basket2 = -1;
+		int total = 1;
+		for (i = 1; i < n_trees; i++)
+		{
+			int fruit = tree[i];
+			if (fruit == basket1)
+			{
+				total++;
+				//continue;
+			}
+			else if (basket2 == -1)  //篮子2中没有水果
+			{
+				basket2 = fruit;
+				total++;
+			}
+			else
+			{
+				if (basket2 == fruit)
+				{
+					total++;
+				}
+				else
+				{
+					break;
+				}
+			}
+		}
+		if (i == n_trees)//i表示子序列结束的点的再下一个点，因此最大可以等于n_trees
+		{
+			return n_trees;  //tree本身就只有两种水果
+			//return total;
+		}
+		//basket1,basket2表示两种水果，j表示新的起点，
+		basket1= tree[i - 1]; basket2 = tree[i]; j = i - 1;
+		for (; i <= n_trees; i++)
+		{
+			while (tree[j] == tree[j - 1]) j--; //将如果相邻的果树，水果相同，则起点必须要前移
+			if (i == n_trees || (tree[i] != basket1 && tree[i] != basket2))
+			{
+				total = max(total, i - j);
+				if (i == n_trees) return total;
+				basket1 = tree[i - 1];
+				basket2 = tree[i];
+				j = i - 1;
+			}
+		}
+		return total;
+
+	}
+
 
 	int totalFruit3(vector<int>& tree)
 	{
@@ -200,15 +261,19 @@ public:
 
 };
 
-int main()
-{
-	Solution solu;
-	vector<int> ivec = { 3,3,3,3,2,1,1,2,3,3,4 };
-	cout << solu.totalFruit2(ivec);  //5
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	vector<int> ivec = { 3,3,3,3,2,1,1,2,3,3,4 };
+//	
+//
+//	vector<int> mivec = { 1,2,1 };
+//
+//	//cout << solu.totalFruit2(mivec) << endl;;  //5
+//	cout << solu.myTotalFruit(ivec);  //5
+//	system("pause");
+//	return 0;
+//}
 
 
 

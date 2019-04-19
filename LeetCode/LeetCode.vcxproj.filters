@@ -84,5 +84,8 @@
     <ClCompile Include="Fruit_into_Baskets.cpp">
       <Filter>源文件\201903_</Filter>
     </ClCompile>
+    <ClCompile Include="Remove_Element.cpp">
+      <Filter>源文件\201903_</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
