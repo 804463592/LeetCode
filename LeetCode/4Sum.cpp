@@ -88,27 +88,27 @@ public:
 	}
 };
 
-int main() {
-
-	vector<int> ivec = { -3,-1,0,2,4,5 };
-
-	Solution solu;
-
-	vector<vector<int>> res = solu.fourSum(ivec, 0);
-
-
-	for (vector<vector<int>>::iterator iter = res.begin(); iter != res.end(); iter++)
-	{
-		cout << "[";
-		for (vector<int>::iterator it = iter->begin(); it != iter->end(); it++) {
-			cout << *it << " ";
-
-		}
-		cout << "]";
-
-
-	}
-
-	system("pause");
-	return 0;
-}
+//int main() {
+//
+//	vector<int> ivec = { -3,-1,0,2,4,5 };
+//
+//	Solution solu;
+//
+//	vector<vector<int>> res = solu.fourSum(ivec, 0);
+//
+//
+//	for (vector<vector<int>>::iterator iter = res.begin(); iter != res.end(); iter++)
+//	{
+//		cout << "[";
+//		for (vector<int>::iterator it = iter->begin(); it != iter->end(); it++) {
+//			cout << *it << " ";
+//
+//		}
+//		cout << "]";
+//
+//
+//	}
+//
+//	system("pause");
+//	return 0;
+//}

@@ -118,6 +118,7 @@
     <ClCompile Include="3Sum.cpp" />
     <ClCompile Include="4Sum.cpp" />
     <ClCompile Include="addTwoNumbers.cpp" />
+    <ClCompile Include="Combination_Sum.cpp" />
     <ClCompile Include="ContainerWithMostWater.cpp" />
     <ClCompile Include="countAndSay.cpp" />
     <ClCompile Include="Longest_Palindromic_Substring.cpp" />

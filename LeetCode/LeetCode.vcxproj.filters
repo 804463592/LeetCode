@@ -60,5 +60,8 @@
     <ClCompile Include="4Sum.cpp">
       <Filter>源文件\201809_201902</Filter>
     </ClCompile>
+    <ClCompile Include="Combination_Sum.cpp">
+      <Filter>源文件\201809_201902</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
