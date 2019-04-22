@@ -91,15 +91,15 @@ public:
 	}
 };
 
-int main() {
-
-	vector<int> ivec = {-1,2,1,-4};
-
-	Solution solu;
-
-	int res = solu.threeSumClosest(ivec,1);
-	cout << res << endl;
-
-	system("pause");
-	return 0;
-}
+//int main() {
+//
+//	vector<int> ivec = {-1,2,1,-4};
+//
+//	Solution solu;
+//
+//	int res = solu.threeSumClosest(ivec,1);
+//	cout << res << endl;
+//
+//	system("pause");
+//	return 0;
+//}
