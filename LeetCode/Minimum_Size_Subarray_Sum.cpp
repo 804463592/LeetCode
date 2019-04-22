@@ -116,13 +116,13 @@ public:
 
 };
 
-int main()
-{
-	Solution solu;
-	vector<int> ivec = { 2,3,1,2,3,3,2 };
-
-	cout << solu.minSubArrayLen(7, ivec) << endl;
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	vector<int> ivec = { 2,3,1,2,3,3,2 };
+//
+//	cout << solu.minSubArrayLen(7, ivec) << endl;
+//
+//	system("pause");
+//	return 0;
+//}
