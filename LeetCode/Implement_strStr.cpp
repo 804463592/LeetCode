@@ -26,12 +26,14 @@ using namespace std;
 class Solution {
 public:
 	int strStr(string haystack, string needle) {
+
+		//KMP算法
 		if (needle.empty())
 			return 0;
 		vector<int> next = getnext(needle);
 		int i = 0;
 		int j = 0;
-		//一开始没加这个j<0的判断，结果一直不对，搞了一个多小时。orz
+		
 		while ((j < 0) || (i < haystack.length()) && (j < needle.length())) {
 			if (j == -1 || haystack[i] == needle[j]) {
 				++i;
@@ -45,6 +47,7 @@ public:
 			return i - j;
 		return -1;
 	}
+	//KMP算法中的next
 	vector<int> getnext(string t) {
 		int k = -1;
 		int j = 0;
@@ -120,11 +123,11 @@ public:
 };
 
 
-int main()
-{
-	Solution solu;
-	cout << solu.strStr("hello","ll");
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	cout << solu.strStr("hello","ll");
+//
+//	system("pause");
+//	return 0;
+//}
