@@ -102,5 +102,8 @@
     <ClCompile Include="Remove_Nth_Node_From_End_of_List.cpp">
       <Filter>源文件\201903_</Filter>
     </ClCompile>
+    <ClCompile Include="Reverse_Linked_List.cpp">
+      <Filter>源文件\201903_</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

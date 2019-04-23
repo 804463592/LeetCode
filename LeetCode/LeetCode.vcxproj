@@ -137,6 +137,7 @@
     <ClCompile Include="Remove_Element.cpp" />
     <ClCompile Include="Remove_Nth_Node_From_End_of_List.cpp" />
     <ClCompile Include="reverse.cpp" />
+    <ClCompile Include="Reverse_Linked_List.cpp" />
     <ClCompile Include="Roman_To_Integer.cpp" />
     <ClCompile Include="Rotate_Image.cpp" />
     <ClCompile Include="TrappingRainWater.cpp" />

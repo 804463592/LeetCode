@@ -73,18 +73,8 @@ public:
 		return head_node;
 	}
 
-	void deleteNodeList1(ListNode*head)
-	{   //方法一，每次删除的是头节点后面一个元素
-		ListNode* p = head->next;
-		while (head)
-		{
-			head->next = p->next;
-			delete p;
-			p = head->next;
-		}
-	}
 	//ListNode*
-	ListNode* deleteNodeList2(ListNode*list_node)
+	ListNode* deleteNodeList(ListNode*list_node)
 	{  //方法二，每次都删除头节点
 		/*
 		这里要特别注意一点，虽然这里的参数是指针，但是仍然是复制过来的（只是两者指向的是同一块内存而已）
@@ -96,33 +86,32 @@ public:
 			list_node =list_node->next;
 			delete p;
 		}
-		list_node = nullptr;
+		//list_node = nullptr;
 		return list_node;
 	}
 
 };
-
-int main() {
-	
-	vector<int> ivec = {1,3,5};
-	Solution solu;
-	ListNode* list_node = solu.createNodeList(ivec);
-
-	//list_node=solu.deleteNodeList2(list_node); //函数必须有返回值，才能将list_node置为NULL
-
-	if (!list_node)
-	{
-		cout << "list_node deleted!!";
-	}
-
-	ListNode* head = solu.removeNthFromEnd(list_node, 2);
-
-	while (head) 
-	{
-		cout << head->val << " ";
-		head = head->next;//注意：这种方式cout会破坏原来的链表
-	}
-
-	system("pause");
-	return 0;
-}
+//
+//int main() {
+//	
+//	vector<int> ivec = {1,3,5};
+//	Solution solu;
+//	ListNode* list_node = solu.createNodeList(ivec);
+//
+//	list_node=solu.deleteNodeList(list_node); //函数必须有返回值，才能将list_node置为NULL
+//
+//	if (!list_node)
+//	{
+//		cout << "list_node deleted!!";
+//	}
+//
+//	//ListNode* head = solu.removeNthFromEnd(list_node, 2);
+//	//while (head) 
+//	//{
+//	//	cout << head->val << " ";
+//	//	head = head->next;//注意：这种方式cout会破坏原来的链表
+//	//}
+//
+//	system("pause");
+//	return 0;
+//}
