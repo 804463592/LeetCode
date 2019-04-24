@@ -73,7 +73,7 @@ public:
 		ListNode* reverseHead = NULL;
 		ListNode* pM = NULL; //pM,pN为边界之外的第一个点，
 		ListNode* pMnext = NULL; //pM接着的点
-		ListNode* pN = new ListNode(0); 
+		ListNode* pN = NULL;//new ListNode(0); 
 
 		ListNode* pPre = NULL;
 		ListNode* pNode = head;
@@ -155,9 +155,8 @@ public:
 					//反转
 					pNode->next = pPre;
 
-					//可能的新的头节点
+					//新的头节点,//i=n,就可以不继续移动了
 					reverseHead = pNode;
-					//可以不继续移动了
 				}
 				else
 				{
@@ -217,18 +216,18 @@ public:
 
 };
 
-int main() {
-
-	vector<int> ivec = { 3,5,6 };
-	Solution solu;
-	ListNode* list_node = solu.createNodeList(ivec);
-
-	ListNode* head = solu.reverseBetween(list_node, 1, 3);
-
-	solu.showNodeList(head);
-
-
-
-	system("pause");
-	return 0;
-}
+//int main() {
+//
+//	vector<int> ivec = { 3,5,6 };
+//	Solution solu;
+//	ListNode* list_node = solu.createNodeList(ivec);
+//
+//	ListNode* head = solu.reverseBetween(list_node, 1, 3);
+//
+//	solu.showNodeList(head);
+//
+//
+//
+//	system("pause");
+//	return 0;
+//}

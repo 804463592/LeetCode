@@ -105,5 +105,8 @@
     <ClCompile Include="Reverse_Linked_List.cpp">
       <Filter>源文件\201903_</Filter>
     </ClCompile>
+    <ClCompile Include="Battleships_in_a_Board.cpp">
+      <Filter>源文件\201903_</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
