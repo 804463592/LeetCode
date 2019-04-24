@@ -108,5 +108,11 @@
     <ClCompile Include="Battleships_in_a_Board.cpp">
       <Filter>源文件\201903_</Filter>
     </ClCompile>
+    <ClCompile Include="First_Bad_Version.cpp">
+      <Filter>源文件\201903_</Filter>
+    </ClCompile>
+    <ClCompile Include="Guess_Number_Higher_or_Lower.cpp">
+      <Filter>源文件\201903_</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -52,18 +52,18 @@ public:
 	}
 };
 
-int main()
-{
-	vector<vector<char>> input = {
-	{'X','.','.','X'},
-	{'.','.','.','X'},
-	{'.','.','.','X'}
-	};
-
-	Solution solu;
-	cout << solu.countBattleships(input);
-
-	system("pause");
-	return 0;
-
-}
+//int main()
+//{
+//	vector<vector<char>> input = {
+//	{'X','.','.','X'},
+//	{'.','.','.','X'},
+//	{'.','.','.','X'}
+//	};
+//
+//	Solution solu;
+//	cout << solu.countBattleships(input);
+//
+//	system("pause");
+//	return 0;
+//
+//}
