@@ -12,7 +12,6 @@
 
 */
 
-
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -56,11 +55,11 @@ public:
 	}
 };
 
-int main()
-{
-	Solution solu;
-	cout << solu.guessNumber(10) << endl;
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	cout << solu.guessNumber(10) << endl;
+//
+//	system("pause");
+//	return 0;
+//}

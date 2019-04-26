@@ -124,6 +124,7 @@
     <ClCompile Include="Climbing_Stairs.cpp" />
     <ClCompile Include="ContainerWithMostWater.cpp" />
     <ClCompile Include="countAndSay.cpp" />
+    <ClCompile Include="Dungeon_Game.cpp" />
     <ClCompile Include="First_Bad_Version.cpp" />
     <ClCompile Include="Fruit_into_Baskets.cpp" />
     <ClCompile Include="Guess_Number_Higher_or_Lower.cpp" />
