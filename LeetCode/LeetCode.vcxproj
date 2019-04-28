@@ -134,6 +134,7 @@
     <ClCompile Include="Implement_strStr.cpp" />
     <ClCompile Include="Longest_Palindromic_Substring.cpp" />
     <ClCompile Include="Longest_Substring_Without_Repeating_Characters.cpp" />
+    <ClCompile Include="Maximum_Subarray.cpp" />
     <ClCompile Include="Minimum_Path_Sum.cpp" />
     <ClCompile Include="Minimum_Size_Subarray_Sum.cpp" />
     <ClCompile Include="Move_Zeroes.cpp" />

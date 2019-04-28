@@ -132,14 +132,14 @@ public:
 	}
 };
 
-int main()
-{
-	vector<vector<int>> dungeon;
-	dungeon = { {-2,-3,3},{-5,-10,1},{10,30,-5} };
-	Solution solu;
-
-	cout << solu.calculateMinimumHP(dungeon) << endl;
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	vector<vector<int>> dungeon;
+//	dungeon = { {-2,-3,3},{-5,-10,1},{10,30,-5} };
+//	Solution solu;
+//
+//	cout << solu.calculateMinimumHP(dungeon) << endl;
+//
+//	system("pause");
+//	return 0;
+//}
