@@ -120,5 +120,8 @@
     <ClCompile Include="Maximum_Subarray.cpp">
       <Filter>源文件\201903_</Filter>
     </ClCompile>
+    <ClCompile Include="Binary_Tree.cpp">
+      <Filter>源文件\201903_</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

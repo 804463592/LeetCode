@@ -120,6 +120,7 @@
     <ClCompile Include="4Sum.cpp" />
     <ClCompile Include="addTwoNumbers.cpp" />
     <ClCompile Include="Battleships_in_a_Board.cpp" />
+    <ClCompile Include="Binary_Tree.cpp" />
     <ClCompile Include="Boats_to_Save_People.cpp" />
     <ClCompile Include="Climbing_Stairs.cpp" />
     <ClCompile Include="ContainerWithMostWater.cpp" />

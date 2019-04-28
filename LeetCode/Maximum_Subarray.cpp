@@ -31,15 +31,15 @@ public:
 		return maxSum;
 	}
 };
-
-int main()
-{
-	vector<int> dungeon;
-	dungeon = { -2,-1,-3 };
-	Solution solu;
-
-	cout << solu.maxSubArray(dungeon) << endl;
-
-	system("pause");
-	return 0;
-}
+//
+//int main()
+//{
+//	vector<int> dungeon;
+//	dungeon = { -2,-1,-3 };
+//	Solution solu;
+//
+//	cout << solu.maxSubArray(dungeon) << endl;
+//
+//	system("pause");
+//	return 0;
+//}
