@@ -72,11 +72,11 @@ public:
 	}
 };
 
-int main()
-{
-	Solution solu;
-	vector<int> input_bills = { 5,5,10,10,5,20,5,10,5,5 };
-	cout << " "<<solu.lemonadeChange(input_bills);
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	Solution solu;
+//	vector<int> input_bills = { 5,5,10,10,5,20,5,10,5,5 };
+//	cout << " "<<solu.lemonadeChange(input_bills);
+//	system("pause");
+//	return 0;
+//}

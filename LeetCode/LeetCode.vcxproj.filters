@@ -132,5 +132,8 @@
     <ClCompile Include="LemonadeChange.cpp">
       <Filter>源文件\201909</Filter>
     </ClCompile>
+    <ClCompile Include="TransposeMatrix.cpp">
+      <Filter>源文件\201909</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

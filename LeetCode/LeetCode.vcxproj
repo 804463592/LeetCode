@@ -148,6 +148,7 @@
     <ClCompile Include="Reverse_Linked_List.cpp" />
     <ClCompile Include="Roman_To_Integer.cpp" />
     <ClCompile Include="Rotate_Image.cpp" />
+    <ClCompile Include="TransposeMatrix.cpp" />
     <ClCompile Include="TrappingRainWater.cpp" />
     <ClCompile Include="TrappingRainWater2.cpp" />
     <ClCompile Include="ZigZag_Conversion.cpp" />
