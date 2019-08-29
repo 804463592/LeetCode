@@ -56,10 +56,7 @@ public:
 		//}
 		//if(root->right)
 	    // (root->right,res);
-
-
 	}
-
 	vector<int> preorderTraversal(TreeNode* root) {
 
 		vector<int> res;
@@ -79,7 +76,25 @@ public:
 			preOrderFunc(root->right, res);
 		}
 	}
+	vector<int> postorderTraversal(TreeNode* root) {
 
+		vector<int> res;
+
+		postOrderFunc(root, res);
+
+		return res;
+	}
+	void postOrderFunc(TreeNode* root, vector<int> &res) {
+
+		if (root != NULL) {
+
+			postOrderFunc(root->left, res);
+
+			postOrderFunc(root->right, res);
+
+			res.push_back(root->val);
+		}
+	}
 
 
 
@@ -120,20 +135,20 @@ public:
 
 };
 
-int main()
-{
-	vector<int> tree_vec = { 1,0,2,3 }; //-1表示节点为空
-
-	Solution solu;
-
-	TreeNode* root = solu.creatBinaryTree(tree_vec);
-
-	vector<int> res =solu.inorderTraversal(root);
-
-	for (int i = 0; i < res.size(); i++)
-	{
-		cout << res[i] << " ";
-	}
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	vector<int> tree_vec = { 1,0,2,3 }; //-1表示节点为空
+//
+//	Solution solu;
+//
+//	TreeNode* root = solu.creatBinaryTree(tree_vec);
+//
+//	vector<int> res =solu.inorderTraversal(root);
+//
+//	for (int i = 0; i < res.size(); i++)
+//	{
+//		cout << res[i] << " ";
+//	}
+//	system("pause");
+//	return 0;
+//}

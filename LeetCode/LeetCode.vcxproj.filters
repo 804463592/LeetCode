@@ -16,8 +16,11 @@
     <Filter Include="源文件\201809_201902">
       <UniqueIdentifier>{2efd256e-6b2a-4a8a-b0e7-f89d98ecbeb8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\201903_">
+    <Filter Include="源文件\201903_2019_08">
       <UniqueIdentifier>{863ae085-d812-497b-89eb-691486f16528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\201909">
+      <UniqueIdentifier>{a2506d67-8be1-4bb3-a2dc-2413d6666dda}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -64,64 +67,70 @@
       <Filter>源文件\201809_201902</Filter>
     </ClCompile>
     <ClCompile Include="Minimum_Path_Sum.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Climbing_Stairs.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="House_Robber.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="House_Robber2.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="House_Robber3.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Boats_to_Save_People.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Fruit_into_Baskets.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Remove_Element.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Move_Zeroes.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Minimum_Size_Subarray_Sum.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Implement_strStr.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="3Sum_Closest.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Remove_Nth_Node_From_End_of_List.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Reverse_Linked_List.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Battleships_in_a_Board.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="First_Bad_Version.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Guess_Number_Higher_or_Lower.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Dungeon_Game.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Maximum_Subarray.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
     </ClCompile>
     <ClCompile Include="Binary_Tree.cpp">
-      <Filter>源文件\201903_</Filter>
+      <Filter>源文件\201903_2019_08</Filter>
+    </ClCompile>
+    <ClCompile Include="code.cpp">
+      <Filter>源文件\201903_2019_08</Filter>
+    </ClCompile>
+    <ClCompile Include="LemonadeChange.cpp">
+      <Filter>源文件\201909</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

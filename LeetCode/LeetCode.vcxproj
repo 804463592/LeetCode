@@ -123,6 +123,7 @@
     <ClCompile Include="Binary_Tree.cpp" />
     <ClCompile Include="Boats_to_Save_People.cpp" />
     <ClCompile Include="Climbing_Stairs.cpp" />
+    <ClCompile Include="code.cpp" />
     <ClCompile Include="ContainerWithMostWater.cpp" />
     <ClCompile Include="countAndSay.cpp" />
     <ClCompile Include="Dungeon_Game.cpp" />
@@ -133,6 +134,7 @@
     <ClCompile Include="House_Robber2.cpp" />
     <ClCompile Include="House_Robber3.cpp" />
     <ClCompile Include="Implement_strStr.cpp" />
+    <ClCompile Include="LemonadeChange.cpp" />
     <ClCompile Include="Longest_Palindromic_Substring.cpp" />
     <ClCompile Include="Longest_Substring_Without_Repeating_Characters.cpp" />
     <ClCompile Include="Maximum_Subarray.cpp" />
