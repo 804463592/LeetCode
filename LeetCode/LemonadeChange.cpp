@@ -80,3 +80,15 @@ public:
 //	system("pause");
 //	return 0;
 //}
+
+//int main()
+//{
+//	int x = 10;
+//	//[&]{x =x+10; cout<<x<<endl;}();
+//
+//	auto fun = [x]  ()mutable {x = x + 10; cout << x << endl; return x; };
+//	int y =fun();
+//	cout << "Hello, world!" << x<< endl;
+//	system("pause");
+//	return 0;
+//}

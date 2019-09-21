@@ -135,5 +135,14 @@
     <ClCompile Include="TransposeMatrix.cpp">
       <Filter>源文件\201909</Filter>
     </ClCompile>
+    <ClCompile Include="codeTest.cpp">
+      <Filter>源文件\201909</Filter>
+    </ClCompile>
+    <ClCompile Include="YachtRental.cpp">
+      <Filter>源文件\201909</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix_Multiplication.cpp">
+      <Filter>源文件\201909</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
