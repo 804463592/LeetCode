@@ -64,7 +64,7 @@ public:
 		return res;
 	 }
 private:
-	void printMatrixOrder(int i, int j, int** s)
+	void printMatrixOrder(int i, int j, int *s[])  //二维数组作为参数，同样还可以写成：int **s，如果知道列数，还可以写成int s[][matrixLen],或者int (*s)[matrixLen]
 	{
 		if (i == j)
 		{
