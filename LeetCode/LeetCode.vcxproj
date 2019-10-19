@@ -119,6 +119,7 @@
     <ClCompile Include="3Sum_Closest.cpp" />
     <ClCompile Include="4Sum.cpp" />
     <ClCompile Include="addTwoNumbers.cpp" />
+    <ClCompile Include="backTrack.cpp" />
     <ClCompile Include="Battleships_in_a_Board.cpp" />
     <ClCompile Include="Binary_Tree.cpp" />
     <ClCompile Include="Boats_to_Save_People.cpp" />
@@ -153,7 +154,6 @@
     <ClCompile Include="TransposeMatrix.cpp" />
     <ClCompile Include="TrappingRainWater.cpp" />
     <ClCompile Include="TrappingRainWater2.cpp" />
-    <ClCompile Include="YachtRental.cpp" />
     <ClCompile Include="ZigZag_Conversion.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

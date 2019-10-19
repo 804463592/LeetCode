@@ -75,11 +75,7 @@ public:
 		}
 
 
-
-
 		return res_nums;
-
-
 
 	}
 };
