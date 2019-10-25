@@ -139,11 +139,14 @@
     <ClCompile Include="LemonadeChange.cpp" />
     <ClCompile Include="Longest_Palindromic_Substring.cpp" />
     <ClCompile Include="Longest_Substring_Without_Repeating_Characters.cpp" />
+    <ClCompile Include="mapColor.cpp" />
     <ClCompile Include="Matrix_Multiplication.cpp" />
+    <ClCompile Include="maxGroup.cpp" />
     <ClCompile Include="Maximum_Subarray.cpp" />
     <ClCompile Include="Minimum_Path_Sum.cpp" />
     <ClCompile Include="Minimum_Size_Subarray_Sum.cpp" />
     <ClCompile Include="Move_Zeroes.cpp" />
+    <ClCompile Include="NQueue.cpp" />
     <ClCompile Include="Palindrome_Number.cpp" />
     <ClCompile Include="Remove_Element.cpp" />
     <ClCompile Include="Remove_Nth_Node_From_End_of_List.cpp" />

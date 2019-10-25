@@ -144,5 +144,14 @@
     <ClCompile Include="backTrack.cpp">
       <Filter>源文件\201909</Filter>
     </ClCompile>
+    <ClCompile Include="maxGroup.cpp">
+      <Filter>源文件\201909</Filter>
+    </ClCompile>
+    <ClCompile Include="mapColor.cpp">
+      <Filter>源文件\201909</Filter>
+    </ClCompile>
+    <ClCompile Include="NQueue.cpp">
+      <Filter>源文件\201909</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

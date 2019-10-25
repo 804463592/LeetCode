@@ -100,17 +100,17 @@ public:
 
 };
 
-int main()
-{
-	backTrackSolution solu;
-
-	double sumw = 0;
-	double sumv = 0;
-	int n = 4, W = 10;
-
-	solu.Knapsack();
-
-	system("pause");
-	return 0;
-}
+//int main()
+//{
+//	backTrackSolution solu;
+//
+//	double sumw = 0;
+//	double sumv = 0;
+//	int n = 4, W = 10;
+//
+//	solu.Knapsack();
+//
+//	system("pause");
+//	return 0;
+//}
 
