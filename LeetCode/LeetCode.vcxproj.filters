@@ -153,5 +153,8 @@
     <ClCompile Include="NQueue.cpp">
       <Filter>源文件\201909</Filter>
     </ClCompile>
+    <ClCompile Include="ProcessingOrder.cpp">
+      <Filter>源文件\201909</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

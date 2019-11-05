@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+//<<趣学算法>> p289页
 class Solution {
 private:
 	int  n = 8;  //矩阵的长宽

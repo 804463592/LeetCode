@@ -148,6 +148,7 @@
     <ClCompile Include="Move_Zeroes.cpp" />
     <ClCompile Include="NQueue.cpp" />
     <ClCompile Include="Palindrome_Number.cpp" />
+    <ClCompile Include="ProcessingOrder.cpp" />
     <ClCompile Include="Remove_Element.cpp" />
     <ClCompile Include="Remove_Nth_Node_From_End_of_List.cpp" />
     <ClCompile Include="reverse.cpp" />
