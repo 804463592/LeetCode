@@ -184,16 +184,30 @@ bool operator<(const Node&a, const Node&b)
 double Travelingbfs()
 {//分支定界法：采用广度优先搜索
 
+
+
 	Node livenode, newnode;
-	//构造根节点,从第二个结点开始
+	//（一）不建议像原来的代码中，使用if(t==n)并对最后一个结点特殊处理
+
+	//（二）构造根节点,从第二个结点开始;也即，id =2，代表livenode中的x[1] 是确定的，id=3，则表示x[1],x[2]已经确定
+	//那么对于n =4的问题，id最终将加到5（也就是说，最后一个livenode的id为5），所以应当使用if(t>n)，
+	
+
+	//（三）使用if(t==n)也不是不可以，那么初始化时，就要初始化id =1，此时id =1，代表x[1]是确定的，id =3，代表x[1],x[2],x[3]是确定的
+	//个人觉得方式（三）是最容易理解的，第一个结点，则代表第一步已经确定了，而不是像原代码一样，id =2才代表x[1]已经确定，很混乱。这种方式代码如下
+
+	//方式（二）按照下面方式初始化
 	//Node newnode(0,2);
 	//Node* p_newnode = new Node(0,2);
 	//Node newnode = Node(0, 2);
+
+	//方式（三）
+	//构造根节点
 	newnode.cl = 0;
-	newnode.id = 2;
+	newnode.id = 1;
 	for (int i = 1; i <= n; i++)
 	{
-		newnode.x[i] = i;
+		newnode.x[i] =i;
 	}
 	priority_queue<Node> q;
 	q.push(newnode);
@@ -214,7 +228,9 @@ double Travelingbfs()
 		}
 		cout << endl<<endl;
 		t = livenode.id;
-		if (t > n)
+
+       //方式（二）则为：if(t>n)
+		if (t ==n)
 		{
 			/*
 			判断是否为当前最优解：要保证最后一个结点与起点有通路，
@@ -233,21 +249,26 @@ double Travelingbfs()
 		}
 		if (livenode.cl > bestl)
 			continue;
-		for (int j = t; j <= n; j++)
+		//方式（二）则为：for (int j = t; j <= n; j++)
+		for (int j = t+1; j <= n; j++)
 		{
+			//方式（二）则为：	if (g[livenode.x[j]][livenode.x[t-1]] != INF)
 			//如果x[j]景点和x[t-1]景点可到达，则判断是否可能获得新的bestl
-			if (g[livenode.x[j]][livenode.x[t - 1]] != INF)
+			if (g[livenode.x[j]][livenode.x[t]] != INF)
 			{
-				double cl = livenode.cl + g[livenode.x[j]][livenode.x[t - 1]];
+				//方式（二）则为：	double cl = livenode.cl + g[livenode.x[j]][livenode.x[t-1]];
+				double cl = livenode.cl + g[livenode.x[j]][livenode.x[t]];
+
 				if (cl < bestl)
 				{
 					//说明该结点可以拓展子结点加入队列中，因为当前的cl还是小于bestl的
-					newnode = Node(cl, t + 1);
+					newnode = Node(cl, t+1);
 					for (int i = 1; i <= n; i++)
 					{
 						newnode.x[i] = livenode.x[i];
 					}
-					swap(newnode.x[t], newnode.x[j]);
+					//方式（二）则为：swap(newnode.x[t], newnode.x[j]);
+					swap(newnode.x[t+1], newnode.x[j]);
 					//新的结点入队列
 					q.push(newnode);
 				}
